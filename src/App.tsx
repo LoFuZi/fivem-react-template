@@ -3,6 +3,8 @@ import { fetchNui } from './utils/fetchNui';
 import { useNuiEvent } from './utils/useNuiEvent';
 import { debugData } from './utils/debugData';
 
+import { Button } from './components/ui/button';
+
 debugData([
   {
     action: 'setVisible',
@@ -31,17 +33,7 @@ function App() {
   return (
     <div className="flex h-screen w-screen items-center justify-center">
       
-      <div className="w-[500px] overflow-hidden rounded-lg bg-gray-900/70 shadow-2xl backdrop-blur-md text-white">
-        
-        <div className="relative bg-gray-600/50 p-6 text-center">
-          <h1 className="text-3xl font-bold">
-            Hello World
-          </h1>
-          <p>Template by lofuzi</p>
-        </div>
-
-
-      </div>
+      <Button variant="outline">Prendre son service</Button>
     </div>
   );
 }
